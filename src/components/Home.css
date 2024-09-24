@@ -1,0 +1,104 @@
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the top */
+    min-height: 100vh; /* Full viewport height */
+    position: relative; /* Needed for absolute positioning of children */
+}
+
+.imagePl {
+    position: relative;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 600px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 15%;
+
+}
+
+.moving-circle {
+    width: 300px;
+    height: 300px;
+    background-color: #ff6347;
+    border-radius: 50%; /* Makes it circular */
+    position: absolute; /* Absolute positioning */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+    animation: moveUpDown 2s infinite alternate; /* Animation */
+    z-index: 1; /* Set a lower z-index so it's behind the image */
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translate(-50%, -50%) translateY(0); /* Start position */
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(50px); /* Move down */
+    }
+}
+
+.content {
+    margin-top: 220px; /* Adjust margin for spacing below moving circle */
+    padding: 0 15px; /* Padding for smaller screens */
+}
+
+.header {
+    color: white;
+    font-size: 2.5em; /* Larger header size */
+}
+
+.header2 {
+    color: aliceblue;
+    font-size: 1.5em; /* Adjust header font size */
+}
+
+.Description {
+    color: white;
+    font-size: 1em; /* Font size for description */
+    max-width: 600px; /* Limit description width */
+    margin: 0 auto; /* Center description */
+}
+
+.about-button {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Adds space inside the button */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Space above the button */
+}
+
+.about-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .moving-circle {
+        width: 200px; /* Smaller size on smaller screens */
+        height: 200px;
+        margin-top: 15%;
+    }
+
+    .header {
+        font-size: 2em; /* Adjust header font size */
+    }
+
+    .header2 {
+        font-size: 1.2em; /* Adjust header2 font size */
+    }
+
+    .Description {
+        font-size: 0.9em; /* Smaller description font size */
+    }
+
+    .about-button {
+        padding: 8px 16px; /* Adjust button size */
+        font-size: 14px; /* Smaller font size */
+    }
+}

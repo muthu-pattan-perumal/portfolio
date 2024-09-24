@@ -1,0 +1,72 @@
+/* Projects.css */
+
+.projects {
+    background-color: #002147; /* Dark blue background */
+    color: #f4f4f4; /* Light text color for contrast */
+    padding: 30px; /* Spacing around the content */
+    max-width: 800px; /* Limit max width */
+    margin: 20px auto; /* Center the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.projects h2 {
+    text-align: center; /* Center the heading */
+    color: #ffcc00; /* Bright color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    margin: 10px 0; /* Space between cards */
+    padding: 15px; /* Space inside cards */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.project-card img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+.project-card h3 {
+    color: #ffcc00; /* Bright color for titles */
+    margin: 10px 0; /* Space above and below titles */
+}
+
+.project-card p {
+    color: #f4f4f4; /* Light text color */
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.project-card a {
+    display: inline-block; /* Block level for proper spacing */
+    margin: 5px 10px; /* Space between links */
+    color: #f4f4f4; /* Link text color */
+    background-color: #007bff; /* Button background color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded button corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.project-card a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .project-card {
+        margin: 10px; /* Less margin on smaller screens */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Smaller heading */
+    }
+}

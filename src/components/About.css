@@ -1,0 +1,94 @@
+.about {
+    background-color: #002147; /* Dark blue background */
+    color: #f4f4f4; /* Light text for contrast */
+    padding: 30px; /* Spacing around the content */
+    max-width: 800px; /* Limit max width */
+    margin: 20px auto; /* Center the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.about h1 {
+    text-align: center; /* Center the heading */
+    color: #ffcc00; /* Bright color for heading */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+.about-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-between; /* Space between list and image */
+}
+
+.about ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    flex: 1; /* Allow the list to grow */
+    margin-right: 20px; /* Space between the list and image */
+}
+
+.about li {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    margin: 10px 0; /* Space between list items */
+    padding: 15px; /* Space inside list items */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    position: relative; /* Position for pseudo-element */
+}
+
+.about li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+.about li::before {
+    content: ''; /* Create a pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px; /* Match the border radius */
+    background: rgba(255, 204, 0, 0.1); /* Subtle highlight on hover */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Smooth transition */
+}
+
+.about li:hover::before {
+    opacity: 1; /* Show highlight on hover */
+}
+
+.about a {
+    color: #ffcc00; /* Bright color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.about a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.avatar-image {
+    width: 200px; /* Set width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-left: 20px; /* Space between text and image */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px; /* Adjust padding on smaller screens */
+    }
+
+    .about h1 {
+        font-size: 1.8em; /* Smaller heading size */
+    }
+
+    .about ul {
+        margin-right: 0; /* Remove margin on small screens */
+    }
+
+    .avatar-image {
+        width: 150px; /* Smaller image on small screens */
+    }
+}

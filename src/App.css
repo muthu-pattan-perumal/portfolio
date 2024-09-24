@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./bg.jpg'); /* Use relative path without leading slash */
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  background-position: center; /* Centers the image */
+  width: 99vw;
+  min-height: 100vh;
+}
+
+nav {
+  background: #4d5163;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 5px;
+  text-decoration: none;
+  font-family: -webkit-body;
+}
+
+nav .active {
+  color: #ff6347; /* Change this to your desired active color */
+  text-decoration: underline; /* Underline for active link */
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}

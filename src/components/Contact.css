@@ -1,0 +1,52 @@
+.contact {
+    background-color: #002147; /* Dark blue background */
+    color: #f4f4f4; /* Light text color for contrast */
+    padding: 40px; /* Spacing around the content */
+    max-width: 600px; /* Limit max width */
+    margin: 50px auto; /* Center the content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.contact h2 {
+    text-align: center; /* Center the heading */
+    color: #ffcc00; /* Bright color for heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.contact input,
+.contact textarea {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Space inside inputs */
+    margin: 10px 0; /* Space between inputs */
+    color: #f4f4f4; /* Text color */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background: rgba(255, 255, 255, 0.3); /* Lighter background on focus */
+    outline: none; /* Remove default outline */
+}
+
+.contact button {
+    background-color: #ffcc00; /* Button color */
+    color: #002147; /* Button text color */
+    padding: 15px; /* Space inside button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact button:hover {
+    background-color: #e6b800; /* Darker yellow on hover */
+}
